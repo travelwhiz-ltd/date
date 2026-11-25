@@ -3575,7 +3575,7 @@ init_tzdb()
     std::unique_ptr<tzdb> db(new tzdb);
 
 #if DATE_EMBED_TZ_DB
-    db->version = "2024a";
+    db->version = "2026f";
 #elif AUTO_DOWNLOAD
     if (!file_exists(install))
     {
@@ -3628,7 +3628,7 @@ init_tzdb()
     CONSTDATA char*const files[] =
     {
         "africa", "antarctica", "asia", "australasia", "backward", "etcetera", "europe",
-        "pacificnew", "northamerica", "southamerica", "systemv", "leapseconds"
+        "northamerica", "southamerica", "leapseconds"
     };
 
     for (const auto& filename : files)
